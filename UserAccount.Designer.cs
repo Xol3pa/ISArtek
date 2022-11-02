@@ -100,9 +100,9 @@ namespace POSales
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(7, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 43);
+            this.label1.Size = new System.Drawing.Size(196, 62);
             this.label1.TabIndex = 0;
-            this.label1.Text = "User Setting";
+            this.label1.Text = "Настройка пользователя";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // metroTabControl1
@@ -112,7 +112,7 @@ namespace POSales
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(32, 12);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(928, 452);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -134,15 +134,15 @@ namespace POSales
             this.metroTabPage1.Controls.Add(this.label2);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 2;
+            this.metroTabPage1.HorizontalScrollbarSize = 1;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(920, 410);
             this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "Create Account";
+            this.metroTabPage1.Text = "Создать аккаунт";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 4;
+            this.metroTabPage1.VerticalScrollbarSize = 2;
             // 
             // btnAccSave
             // 
@@ -151,11 +151,11 @@ namespace POSales
             this.btnAccSave.FlatAppearance.BorderSize = 0;
             this.btnAccSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccSave.ForeColor = System.Drawing.Color.White;
-            this.btnAccSave.Location = new System.Drawing.Point(584, 344);
+            this.btnAccSave.Location = new System.Drawing.Point(553, 344);
             this.btnAccSave.Name = "btnAccSave";
-            this.btnAccSave.Size = new System.Drawing.Size(94, 35);
+            this.btnAccSave.Size = new System.Drawing.Size(126, 35);
             this.btnAccSave.TabIndex = 31;
-            this.btnAccSave.Text = "Save";
+            this.btnAccSave.Text = "Сохранить";
             this.btnAccSave.UseVisualStyleBackColor = false;
             this.btnAccSave.Click += new System.EventHandler(this.btnAccSave_Click);
             // 
@@ -168,17 +168,17 @@ namespace POSales
             this.btnAccCancel.ForeColor = System.Drawing.Color.Black;
             this.btnAccCancel.Location = new System.Drawing.Point(698, 344);
             this.btnAccCancel.Name = "btnAccCancel";
-            this.btnAccCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnAccCancel.Size = new System.Drawing.Size(114, 35);
             this.btnAccCancel.TabIndex = 32;
-            this.btnAccCancel.Text = "Cancel";
+            this.btnAccCancel.Text = "Отмена";
             this.btnAccCancel.UseVisualStyleBackColor = false;
             this.btnAccCancel.Click += new System.EventHandler(this.btnAccCancel_Click);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(265, 273);
+            this.txtName.Location = new System.Drawing.Point(305, 274);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(527, 30);
+            this.txtName.Size = new System.Drawing.Size(527, 26);
             this.txtName.TabIndex = 5;
             // 
             // cbRole
@@ -187,32 +187,32 @@ namespace POSales
             this.cbRole.Items.AddRange(new object[] {
             "Administrator",
             "Cashier"});
-            this.cbRole.Location = new System.Drawing.Point(265, 220);
+            this.cbRole.Location = new System.Drawing.Point(305, 220);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(527, 30);
+            this.cbRole.Size = new System.Drawing.Size(527, 28);
             this.cbRole.TabIndex = 4;
             // 
             // txtRePass
             // 
-            this.txtRePass.Location = new System.Drawing.Point(265, 169);
+            this.txtRePass.Location = new System.Drawing.Point(305, 169);
             this.txtRePass.Name = "txtRePass";
-            this.txtRePass.Size = new System.Drawing.Size(527, 30);
+            this.txtRePass.Size = new System.Drawing.Size(527, 26);
             this.txtRePass.TabIndex = 3;
             this.txtRePass.UseSystemPasswordChar = true;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(265, 118);
+            this.txtPass.Location = new System.Drawing.Point(305, 118);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(527, 30);
+            this.txtPass.Size = new System.Drawing.Size(527, 26);
             this.txtPass.TabIndex = 3;
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(265, 67);
+            this.txtUsername.Location = new System.Drawing.Point(305, 67);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(527, 30);
+            this.txtUsername.Size = new System.Drawing.Size(527, 26);
             this.txtUsername.TabIndex = 3;
             // 
             // label6
@@ -220,45 +220,45 @@ namespace POSales
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(95, 274);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 22);
+            this.label6.Size = new System.Drawing.Size(99, 20);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Full Name :";
+            this.label6.Text = "Полное имя";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(95, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 22);
+            this.label5.Size = new System.Drawing.Size(43, 20);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Role :";
+            this.label5.Text = "Роль";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(95, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 22);
+            this.label4.Size = new System.Drawing.Size(204, 20);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Re-type Password :";
+            this.label4.Text = "Введите пароль еще раз :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(95, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 22);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Password :";
+            this.label3.Text = "Пароль";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(95, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 22);
+            this.label2.Size = new System.Drawing.Size(40, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Username :";
+            this.label2.Text = "Имя";
             // 
             // metroTabPage2
             // 
@@ -275,15 +275,15 @@ namespace POSales
             this.metroTabPage2.Controls.Add(this.label8);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 2;
+            this.metroTabPage2.HorizontalScrollbarSize = 1;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(920, 410);
             this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Change Password";
+            this.metroTabPage2.Text = "Изменить пароль";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 4;
+            this.metroTabPage2.VerticalScrollbarSize = 2;
             // 
             // lblUsername
             // 
@@ -291,9 +291,9 @@ namespace POSales
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(176, 73);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(103, 23);
+            this.lblUsername.Size = new System.Drawing.Size(146, 18);
             this.lblUsername.TabIndex = 36;
-            this.lblUsername.Text = "Username";
+            this.lblUsername.Text = "Имя пользователя";
             // 
             // pictureBox1
             // 
@@ -311,11 +311,11 @@ namespace POSales
             this.btnPassSave.FlatAppearance.BorderSize = 0;
             this.btnPassSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPassSave.ForeColor = System.Drawing.Color.White;
-            this.btnPassSave.Location = new System.Drawing.Point(599, 321);
+            this.btnPassSave.Location = new System.Drawing.Point(557, 321);
             this.btnPassSave.Name = "btnPassSave";
-            this.btnPassSave.Size = new System.Drawing.Size(94, 35);
+            this.btnPassSave.Size = new System.Drawing.Size(130, 35);
             this.btnPassSave.TabIndex = 33;
-            this.btnPassSave.Text = "Save";
+            this.btnPassSave.Text = "Сохранить";
             this.btnPassSave.UseVisualStyleBackColor = false;
             this.btnPassSave.Click += new System.EventHandler(this.btnPassSave_Click);
             // 
@@ -328,9 +328,9 @@ namespace POSales
             this.btnPassCancel.ForeColor = System.Drawing.Color.Black;
             this.btnPassCancel.Location = new System.Drawing.Point(713, 321);
             this.btnPassCancel.Name = "btnPassCancel";
-            this.btnPassCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnPassCancel.Size = new System.Drawing.Size(107, 35);
             this.btnPassCancel.TabIndex = 34;
-            this.btnPassCancel.Text = "Cancel";
+            this.btnPassCancel.Text = "Отмена";
             this.btnPassCancel.UseVisualStyleBackColor = false;
             this.btnPassCancel.Click += new System.EventHandler(this.btnPassCancel_Click);
             // 
@@ -338,7 +338,7 @@ namespace POSales
             // 
             this.txtRePass2.Location = new System.Drawing.Point(280, 234);
             this.txtRePass2.Name = "txtRePass2";
-            this.txtRePass2.Size = new System.Drawing.Size(527, 30);
+            this.txtRePass2.Size = new System.Drawing.Size(527, 26);
             this.txtRePass2.TabIndex = 11;
             this.txtRePass2.UseSystemPasswordChar = true;
             // 
@@ -347,15 +347,15 @@ namespace POSales
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(110, 237);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(183, 22);
+            this.label10.Size = new System.Drawing.Size(204, 20);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Re-type Password :";
+            this.label10.Text = "Введите пароль еще раз :";
             // 
             // txtNPass
             // 
             this.txtNPass.Location = new System.Drawing.Point(280, 176);
             this.txtNPass.Name = "txtNPass";
-            this.txtNPass.Size = new System.Drawing.Size(527, 30);
+            this.txtNPass.Size = new System.Drawing.Size(527, 26);
             this.txtNPass.TabIndex = 9;
             this.txtNPass.UseSystemPasswordChar = true;
             // 
@@ -364,15 +364,15 @@ namespace POSales
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(110, 179);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 22);
+            this.label9.Size = new System.Drawing.Size(121, 20);
             this.label9.TabIndex = 8;
-            this.label9.Text = "New Password :";
+            this.label9.Text = "Новый пароль :";
             // 
             // txtCurPass
             // 
             this.txtCurPass.Location = new System.Drawing.Point(280, 121);
             this.txtCurPass.Name = "txtCurPass";
-            this.txtCurPass.Size = new System.Drawing.Size(527, 30);
+            this.txtCurPass.Size = new System.Drawing.Size(527, 26);
             this.txtCurPass.TabIndex = 7;
             this.txtCurPass.UseSystemPasswordChar = true;
             // 
@@ -381,9 +381,9 @@ namespace POSales
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(110, 124);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 22);
+            this.label8.Size = new System.Drawing.Size(139, 20);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Current Password :";
+            this.label8.Text = "Текущий пароль :";
             // 
             // metroTabPage3
             // 
@@ -393,15 +393,15 @@ namespace POSales
             this.metroTabPage3.Controls.Add(this.dgvUser);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 2;
+            this.metroTabPage3.HorizontalScrollbarSize = 1;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(920, 410);
             this.metroTabPage3.TabIndex = 2;
-            this.metroTabPage3.Text = "Activate/ UnActivate Account";
+            this.metroTabPage3.Text = "Активировать/ Снять активацию";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 4;
+            this.metroTabPage3.VerticalScrollbarSize = 2;
             // 
             // gbUser
             // 
@@ -414,7 +414,7 @@ namespace POSales
             this.gbUser.Size = new System.Drawing.Size(890, 100);
             this.gbUser.TabIndex = 23;
             this.gbUser.TabStop = false;
-            this.gbUser.Text = "Password For UserName";
+            this.gbUser.Text = "Пароль для имени пользователя";
             // 
             // pictureBox2
             // 
@@ -430,9 +430,9 @@ namespace POSales
             this.lblAccNote.AutoSize = true;
             this.lblAccNote.Location = new System.Drawing.Point(103, 27);
             this.lblAccNote.Name = "lblAccNote";
-            this.lblAccNote.Size = new System.Drawing.Size(562, 22);
+            this.lblAccNote.Size = new System.Drawing.Size(596, 20);
             this.lblAccNote.TabIndex = 0;
-            this.lblAccNote.Text = "To change the password for username, click Reset Password.";
+            this.lblAccNote.Text = "Чтобы изменить пароль для имени пользователя, нажмите «Сбросить пароль».";
             // 
             // btnResetPass
             // 
@@ -444,7 +444,7 @@ namespace POSales
             this.btnResetPass.Name = "btnResetPass";
             this.btnResetPass.Size = new System.Drawing.Size(222, 35);
             this.btnResetPass.TabIndex = 22;
-            this.btnResetPass.Text = "Reset Password...";
+            this.btnResetPass.Text = "Сброс пароля...";
             this.btnResetPass.UseVisualStyleBackColor = false;
             this.btnResetPass.Click += new System.EventHandler(this.btnResetPass_Click);
             // 
@@ -454,11 +454,11 @@ namespace POSales
             this.btnProperties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnProperties.FlatAppearance.BorderSize = 0;
             this.btnProperties.ForeColor = System.Drawing.Color.Black;
-            this.btnProperties.Location = new System.Drawing.Point(793, 246);
+            this.btnProperties.Location = new System.Drawing.Point(758, 246);
             this.btnProperties.Name = "btnProperties";
-            this.btnProperties.Size = new System.Drawing.Size(111, 35);
+            this.btnProperties.Size = new System.Drawing.Size(162, 35);
             this.btnProperties.TabIndex = 22;
-            this.btnProperties.Text = "Properties";
+            this.btnProperties.Text = "Характеристики";
             this.btnProperties.UseVisualStyleBackColor = false;
             this.btnProperties.Click += new System.EventHandler(this.btnProperties_Click);
             // 
@@ -468,11 +468,11 @@ namespace POSales
             this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.ForeColor = System.Drawing.Color.Black;
-            this.btnRemove.Location = new System.Drawing.Point(676, 246);
+            this.btnRemove.Location = new System.Drawing.Point(641, 246);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(111, 35);
             this.btnRemove.TabIndex = 22;
-            this.btnRemove.Text = "Remove";
+            this.btnRemove.Text = "Удалить";
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
@@ -512,45 +512,45 @@ namespace POSales
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No";
+            this.Column1.HeaderText = "№";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 63;
+            this.Column1.Width = 48;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "User Name";
+            this.Column2.HeaderText = "Имя пользователя";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 135;
+            this.Column2.Width = 165;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Full Name";
+            this.Column3.HeaderText = "Полное имя";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Account Activate";
+            this.Column5.HeaderText = "Статус активации";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 206;
+            this.Column5.Width = 166;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column4.HeaderText = "Role";
+            this.Column4.HeaderText = "Должность";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 76;
+            this.Column4.Width = 114;
             // 
             // UserAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 561);
@@ -562,7 +562,7 @@ namespace POSales
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "User Account";
+            this.Text = "Аккаунт пользоваеля";
             this.Load += new System.EventHandler(this.UserAccount_Load);
             this.panel1.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);

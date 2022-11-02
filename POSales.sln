@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSales", "POSales\POSales.csproj", "{D3F11B4E-1B68-4FC6-ADEB-BB93F1BB5C34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSales", "POSales.csproj", "{D3F11B4E-1B68-4FC6-ADEB-BB93F1BB5C34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E7324269-535A-4543-9079-025DC3878C54}
+		SolutionGuid = {AA03DEBD-F7A0-4249-9625-97A46E24F4B5}
 	EndGlobalSection
 EndGlobal

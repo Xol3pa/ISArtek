@@ -60,11 +60,11 @@ namespace POSales
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(460, 333);
+            this.btnSave.Location = new System.Drawing.Point(435, 333);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 35);
+            this.btnSave.Size = new System.Drawing.Size(119, 35);
             this.btnSave.TabIndex = 21;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Сохранить";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -79,7 +79,7 @@ namespace POSales
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(94, 35);
             this.btnCancel.TabIndex = 30;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Отмена";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -88,9 +88,9 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(31, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 22);
+            this.label2.Size = new System.Drawing.Size(49, 22);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Supplier Name:";
+            this.label2.Text = "Имя";
             // 
             // panel1
             // 
@@ -121,9 +121,9 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 23);
+            this.label1.Size = new System.Drawing.Size(131, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Supplier Module";
+            this.label1.Text = "Поставщик";
             // 
             // btnUpdate
             // 
@@ -136,7 +136,7 @@ namespace POSales
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 35);
             this.btnUpdate.TabIndex = 29;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Обновить";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -152,45 +152,45 @@ namespace POSales
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(31, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 22);
+            this.label3.Size = new System.Drawing.Size(74, 22);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Address :";
+            this.label3.Text = "Адрес";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(31, 181);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 22);
+            this.label4.Size = new System.Drawing.Size(94, 22);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Contact Person :";
+            this.label4.Text = "Контакты";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(31, 229);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 22);
+            this.label5.Size = new System.Drawing.Size(96, 22);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Phone No :";
+            this.label5.Text = "Телефон";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(31, 279);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 22);
+            this.label6.Size = new System.Drawing.Size(64, 22);
             this.label6.TabIndex = 23;
-            this.label6.Text = "E-mail Address :";
+            this.label6.Text = "Почта";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(431, 232);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 22);
+            this.label7.Size = new System.Drawing.Size(62, 22);
             this.label7.TabIndex = 23;
-            this.label7.Text = "Fax No :";
+            this.label7.Text = "Факс";
             // 
             // txtAddress
             // 

@@ -68,9 +68,9 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(339, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 23);
+            this.label1.Size = new System.Drawing.Size(635, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PRINT PREVIEW FOR POINT OF SALES RECORD";
+            this.label1.Text = "ПРЕДВАРИТЕЛЬНЫЙ ПРОСМОТР ПЕЧАТИ ДЛЯ ОТЧЕТА О ПРОДАЖАХ";
             // 
             // reportViewer1
             // 

@@ -74,7 +74,7 @@ namespace POSales
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Brand Module";
+            this.label1.Text = "Модуль бренда";
             // 
             // txtBrand
             // 
@@ -94,7 +94,7 @@ namespace POSales
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 35);
             this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Сохранить";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -103,9 +103,9 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 22);
+            this.label2.Size = new System.Drawing.Size(185, 22);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Brand Name :";
+            this.label2.Text = "Название бренда:";
             // 
             // btnUpdate
             // 
@@ -118,7 +118,7 @@ namespace POSales
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 35);
             this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Обновить";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -133,7 +133,7 @@ namespace POSales
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(94, 35);
             this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Отмена";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 

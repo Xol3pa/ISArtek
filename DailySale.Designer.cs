@@ -93,18 +93,18 @@ namespace POSales
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(3, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(82, 18);
+            this.lblTitle.Size = new System.Drawing.Size(186, 18);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Sold Items";
+            this.lblTitle.Text = "Доставленные товары";
             this.lblTitle.Visible = false;
             // 
             // dtFrom
             // 
             this.dtFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFrom.Location = new System.Drawing.Point(155, 15);
+            this.dtFrom.Location = new System.Drawing.Point(197, 18);
             this.dtFrom.Name = "dtFrom";
-            this.dtFrom.Size = new System.Drawing.Size(125, 26);
+            this.dtFrom.Size = new System.Drawing.Size(111, 26);
             this.dtFrom.TabIndex = 10;
             this.dtFrom.ValueChanged += new System.EventHandler(this.dtFrom_ValueChanged);
             // 
@@ -112,7 +112,7 @@ namespace POSales
             // 
             this.dtTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtTo.Location = new System.Drawing.Point(313, 15);
+            this.dtTo.Location = new System.Drawing.Point(350, 18);
             this.dtTo.Name = "dtTo";
             this.dtTo.Size = new System.Drawing.Size(125, 26);
             this.dtTo.TabIndex = 10;
@@ -124,19 +124,19 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
+            this.label2.Size = new System.Drawing.Size(191, 20);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Filter By Date: From";
+            this.label2.Text = "Фильтровать по дате: От";
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(285, 18);
+            this.label3.Location = new System.Drawing.Point(314, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 20);
+            this.label3.Size = new System.Drawing.Size(30, 20);
             this.label3.TabIndex = 11;
-            this.label3.Text = "To";
+            this.label3.Text = "До";
             // 
             // lblTotal
             // 
@@ -154,11 +154,11 @@ namespace POSales
             // 
             this.cboCashier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cboCashier.FormattingEnabled = true;
-            this.cboCashier.Location = new System.Drawing.Point(452, 14);
+            this.cboCashier.Location = new System.Drawing.Point(481, 18);
             this.cboCashier.Name = "cboCashier";
-            this.cboCashier.Size = new System.Drawing.Size(131, 28);
+            this.cboCashier.Size = new System.Drawing.Size(171, 28);
             this.cboCashier.TabIndex = 13;
-            this.cboCashier.Text = "Select Cashier";
+            this.cboCashier.Text = "Выбрать кассира";
             this.cboCashier.SelectedIndexChanged += new System.EventHandler(this.cboCashier_SelectedIndexChanged);
             // 
             // btnPrint
@@ -167,7 +167,7 @@ namespace POSales
             this.btnPrint.FlatAppearance.BorderSize = 0;
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(618, 10);
+            this.btnPrint.Location = new System.Drawing.Point(658, 15);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(42, 36);
             this.btnPrint.TabIndex = 14;
@@ -227,9 +227,9 @@ namespace POSales
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No";
+            this.Column1.HeaderText = "№";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 53;
+            this.Column1.Width = 48;
             // 
             // Column9
             // 
@@ -248,14 +248,14 @@ namespace POSales
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
+            this.Column2.HeaderText = "Код";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 81;
+            this.Column2.Width = 60;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
+            this.Column4.HeaderText = "Описание";
             this.Column4.Name = "Column4";
             // 
             // Column7
@@ -263,36 +263,36 @@ namespace POSales
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column7.HeaderText = "Price";
+            this.Column7.HeaderText = "Сумма";
             this.Column7.Name = "Column7";
-            this.Column7.Width = 69;
+            this.Column7.Width = 88;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column5.HeaderText = "Qty";
+            this.Column5.HeaderText = "Кол-во";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 58;
+            this.Column5.Width = 81;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column6.HeaderText = "Discount";
+            this.Column6.HeaderText = "Скидка";
             this.Column6.Name = "Column6";
-            this.Column6.Width = 95;
+            this.Column6.Width = 88;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column8.HeaderText = "Total";
+            this.Column8.HeaderText = "Всего";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 65;
+            this.Column8.Width = 76;
             // 
             // Cancel
             // 
@@ -317,7 +317,7 @@ namespace POSales
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DailySale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SALE HISTORY";
+            this.Text = "История доставок";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DailySale_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

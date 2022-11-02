@@ -39,6 +39,7 @@ namespace POSales
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnPass = new System.Windows.Forms.Button();
+            this.btnDSales = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSettle = new System.Windows.Forms.Button();
             this.btnDiscount = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@ namespace POSales
             this.btnNTran = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.picClose = new System.Windows.Forms.PictureBox();
@@ -84,15 +84,15 @@ namespace POSales
             this.colReduce = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnDSales = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,6 +115,7 @@ namespace POSales
             // 
             // btnLogout
             // 
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -125,9 +126,9 @@ namespace POSales
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(200, 50);
             this.btnLogout.TabIndex = 11;
-            this.btnLogout.Text = " Logout";
+            this.btnLogout.Text = "Выйти ";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnPass
@@ -138,14 +139,32 @@ namespace POSales
             this.btnPass.ForeColor = System.Drawing.Color.White;
             this.btnPass.Image = ((System.Drawing.Image)(resources.GetObject("btnPass.Image")));
             this.btnPass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPass.Location = new System.Drawing.Point(0, 480);
+            this.btnPass.Location = new System.Drawing.Point(0, 531);
             this.btnPass.Name = "btnPass";
-            this.btnPass.Size = new System.Drawing.Size(200, 50);
+            this.btnPass.Size = new System.Drawing.Size(200, 53);
             this.btnPass.TabIndex = 10;
-            this.btnPass.Text = " Change Password";
+            this.btnPass.Text = "Изменить пароль";
             this.btnPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPass.UseVisualStyleBackColor = true;
             this.btnPass.Click += new System.EventHandler(this.btnPass_Click);
+            // 
+            // btnDSales
+            // 
+            this.btnDSales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDSales.FlatAppearance.BorderSize = 0;
+            this.btnDSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDSales.ForeColor = System.Drawing.Color.White;
+            this.btnDSales.Image = ((System.Drawing.Image)(resources.GetObject("btnDSales.Image")));
+            this.btnDSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDSales.Location = new System.Drawing.Point(0, 481);
+            this.btnDSales.Name = "btnDSales";
+            this.btnDSales.Size = new System.Drawing.Size(200, 50);
+            this.btnDSales.TabIndex = 9;
+            this.btnDSales.Text = "Ежедневные доставки";
+            this.btnDSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDSales.UseVisualStyleBackColor = true;
+            this.btnDSales.Visible = false;
+            this.btnDSales.Click += new System.EventHandler(this.btnDSales_Click);
             // 
             // btnClear
             // 
@@ -156,11 +175,11 @@ namespace POSales
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClear.Location = new System.Drawing.Point(0, 380);
+            this.btnClear.Location = new System.Drawing.Point(0, 425);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(200, 50);
+            this.btnClear.Size = new System.Drawing.Size(200, 56);
             this.btnClear.TabIndex = 8;
-            this.btnClear.Text = " Clear Cart";
+            this.btnClear.Text = "Очистить корзину";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -174,11 +193,11 @@ namespace POSales
             this.btnSettle.ForeColor = System.Drawing.Color.White;
             this.btnSettle.Image = ((System.Drawing.Image)(resources.GetObject("btnSettle.Image")));
             this.btnSettle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettle.Location = new System.Drawing.Point(0, 330);
+            this.btnSettle.Location = new System.Drawing.Point(0, 357);
             this.btnSettle.Name = "btnSettle";
-            this.btnSettle.Size = new System.Drawing.Size(200, 50);
+            this.btnSettle.Size = new System.Drawing.Size(200, 68);
             this.btnSettle.TabIndex = 7;
-            this.btnSettle.Text = " Settle Payment";
+            this.btnSettle.Text = "Урегулировать платеж";
             this.btnSettle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettle.UseVisualStyleBackColor = true;
             this.btnSettle.Click += new System.EventHandler(this.btnSettle_Click);
@@ -192,11 +211,11 @@ namespace POSales
             this.btnDiscount.ForeColor = System.Drawing.Color.White;
             this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
             this.btnDiscount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDiscount.Location = new System.Drawing.Point(0, 280);
+            this.btnDiscount.Location = new System.Drawing.Point(0, 297);
             this.btnDiscount.Name = "btnDiscount";
-            this.btnDiscount.Size = new System.Drawing.Size(200, 50);
+            this.btnDiscount.Size = new System.Drawing.Size(200, 60);
             this.btnDiscount.TabIndex = 6;
-            this.btnDiscount.Text = " Add Discount";
+            this.btnDiscount.Text = "Добавить скидку";
             this.btnDiscount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDiscount.UseVisualStyleBackColor = true;
             this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
@@ -209,11 +228,11 @@ namespace POSales
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(0, 230);
+            this.btnSearch.Location = new System.Drawing.Point(0, 239);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(200, 50);
+            this.btnSearch.Size = new System.Drawing.Size(200, 58);
             this.btnSearch.TabIndex = 5;
-            this.btnSearch.Text = " Search Product";
+            this.btnSearch.Text = "Поиск продукта";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -228,9 +247,9 @@ namespace POSales
             this.btnNTran.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNTran.Location = new System.Drawing.Point(0, 180);
             this.btnNTran.Name = "btnNTran";
-            this.btnNTran.Size = new System.Drawing.Size(200, 50);
+            this.btnNTran.Size = new System.Drawing.Size(200, 59);
             this.btnNTran.TabIndex = 4;
-            this.btnNTran.Text = " New Transaction";
+            this.btnNTran.Text = "Новая транзакция";
             this.btnNTran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNTran.UseVisualStyleBackColor = true;
             this.btnNTran.Click += new System.EventHandler(this.btnNTran_Click);
@@ -251,19 +270,9 @@ namespace POSales
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(67, 142);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(101, 22);
+            this.lblUsername.Size = new System.Drawing.Size(83, 20);
             this.lblUsername.TabIndex = 4;
             this.lblUsername.Text = "Username";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -313,9 +322,9 @@ namespace POSales
             this.lblname.ForeColor = System.Drawing.Color.White;
             this.lblname.Location = new System.Drawing.Point(56, 13);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(153, 22);
+            this.lblname.Size = new System.Drawing.Size(40, 20);
             this.lblname.TabIndex = 0;
-            this.lblname.Text = "Name and Role";
+            this.lblname.Text = "Имя";
             // 
             // panel5
             // 
@@ -346,7 +355,7 @@ namespace POSales
             // 
             this.txtQty.Location = new System.Drawing.Point(167, 249);
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(39, 30);
+            this.txtQty.Size = new System.Drawing.Size(39, 26);
             this.txtQty.TabIndex = 11;
             this.txtQty.Text = "1";
             this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -405,7 +414,7 @@ namespace POSales
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(6, 444);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 22);
+            this.label10.Size = new System.Drawing.Size(77, 20);
             this.label10.TabIndex = 7;
             this.label10.Text = "VATable :";
             // 
@@ -414,7 +423,7 @@ namespace POSales
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(6, 411);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 22);
+            this.label9.Size = new System.Drawing.Size(44, 20);
             this.label9.TabIndex = 7;
             this.label9.Text = "VAT :";
             // 
@@ -423,24 +432,24 @@ namespace POSales
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 378);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 22);
+            this.label8.Size = new System.Drawing.Size(73, 20);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Discount :";
+            this.label8.Text = "Скидка :";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 345);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 22);
+            this.label7.Size = new System.Drawing.Size(154, 20);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Sales Total :";
+            this.label7.Text = "Доставлено всего :";
             // 
             // txtBarcode
             // 
             this.txtBarcode.Location = new System.Drawing.Point(13, 249);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(149, 30);
+            this.txtBarcode.Size = new System.Drawing.Size(149, 26);
             this.txtBarcode.TabIndex = 6;
             this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
             // 
@@ -450,16 +459,16 @@ namespace POSales
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(9, 216);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 22);
+            this.label6.Size = new System.Drawing.Size(83, 20);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Barcode";
+            this.label6.Text = "Шртихкод";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Location = new System.Drawing.Point(9, 184);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(120, 22);
+            this.lblDate.Size = new System.Drawing.Size(89, 20);
             this.lblDate.TabIndex = 4;
             this.lblDate.Text = "0000000000";
             // 
@@ -469,16 +478,16 @@ namespace POSales
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(9, 152);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 22);
+            this.label5.Size = new System.Drawing.Size(46, 20);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Date";
+            this.label5.Text = "Дата";
             // 
             // lblTranNo
             // 
             this.lblTranNo.AutoSize = true;
             this.lblTranNo.Location = new System.Drawing.Point(9, 120);
             this.lblTranNo.Name = "lblTranNo";
-            this.lblTranNo.Size = new System.Drawing.Size(142, 22);
+            this.lblTranNo.Size = new System.Drawing.Size(105, 20);
             this.lblTranNo.TabIndex = 2;
             this.lblTranNo.Text = "000000000000";
             // 
@@ -488,9 +497,9 @@ namespace POSales
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 22);
+            this.label2.Size = new System.Drawing.Size(153, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Transaction No";
+            this.label2.Text = "Номер транзакции";
             // 
             // lblDisplayTotal
             // 
@@ -553,10 +562,10 @@ namespace POSales
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No";
+            this.Column1.HeaderText = "№";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 63;
+            this.Column1.Width = 48;
             // 
             // Column9
             // 
@@ -565,20 +574,20 @@ namespace POSales
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            this.Column9.Width = 57;
+            this.Column9.Width = 49;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
+            this.Column2.HeaderText = "Код";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 97;
+            this.Column2.Width = 60;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
+            this.Column4.HeaderText = "Описание";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
@@ -587,40 +596,40 @@ namespace POSales
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column7.HeaderText = "Price";
+            this.Column7.HeaderText = "Сумма";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 81;
+            this.Column7.Width = 88;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column5.HeaderText = "Qty";
+            this.Column5.HeaderText = "Кол-во";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 72;
+            this.Column5.Width = 81;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column6.HeaderText = "Discount";
+            this.Column6.HeaderText = "Скидка";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 116;
+            this.Column6.Width = 88;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column8.HeaderText = "Total";
+            this.Column8.HeaderText = "Всего";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 80;
+            this.Column8.Width = 76;
             // 
             // colAdd
             // 
@@ -654,26 +663,20 @@ namespace POSales
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnDSales
+            // pictureBox1
             // 
-            this.btnDSales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDSales.FlatAppearance.BorderSize = 0;
-            this.btnDSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDSales.ForeColor = System.Drawing.Color.White;
-            this.btnDSales.Image = ((System.Drawing.Image)(resources.GetObject("btnDSales.Image")));
-            this.btnDSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDSales.Location = new System.Drawing.Point(0, 430);
-            this.btnDSales.Name = "btnDSales";
-            this.btnDSales.Size = new System.Drawing.Size(200, 50);
-            this.btnDSales.TabIndex = 9;
-            this.btnDSales.Text = " Daily Sales";
-            this.btnDSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDSales.UseVisualStyleBackColor = true;
-            this.btnDSales.Click += new System.EventHandler(this.btnDSales_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 111);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Cashier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
@@ -688,12 +691,11 @@ namespace POSales
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Cashier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cashier";
+            this.Text = "Кассир";
             this.Load += new System.EventHandler(this.Cashier_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
@@ -701,6 +703,7 @@ namespace POSales
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -719,24 +722,18 @@ namespace POSales
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSettle;
         private System.Windows.Forms.Button btnDiscount;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.Panel panelSlide;
         private System.Windows.Forms.Label lblTimer;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Label lblUsername;
         public System.Windows.Forms.Label lblTranNo;
-        private System.Windows.Forms.TextBox txtQty;
-        public System.Windows.Forms.TextBox txtBarcode;
         public System.Windows.Forms.DataGridView dgvCash;
         public System.Windows.Forms.Label lblDisplayTotal;
         public System.Windows.Forms.Label lblname;
@@ -751,10 +748,16 @@ namespace POSales
         private System.Windows.Forms.DataGridViewImageColumn colAdd;
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        public System.Windows.Forms.Label lblVatable;
-        public System.Windows.Forms.Label lblVat;
         public System.Windows.Forms.Label lblDiscount;
         public System.Windows.Forms.Label lblSaleTotal;
         private System.Windows.Forms.Button btnDSales;
+        private System.Windows.Forms.TextBox txtQty;
+        public System.Windows.Forms.Label lblVatable;
+        public System.Windows.Forms.Label lblVat;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox txtBarcode;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

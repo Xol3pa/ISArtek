@@ -49,13 +49,13 @@ namespace POSales
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblDalySale = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblDalySale = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -63,9 +63,9 @@ namespace POSales
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,7 +74,6 @@ namespace POSales
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(968, 142);
@@ -89,7 +88,7 @@ namespace POSales
             this.panel8.Controls.Add(this.label11);
             this.panel8.Controls.Add(this.pictureBox4);
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(490, 12);
+            this.panel8.Location = new System.Drawing.Point(478, 12);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(227, 114);
             this.panel8.TabIndex = 3;
@@ -109,21 +108,21 @@ namespace POSales
             // 
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(68, 64);
+            this.label10.Location = new System.Drawing.Point(71, 56);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(159, 45);
+            this.label10.Size = new System.Drawing.Size(159, 66);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Total product stock on hand.";
+            this.label10.Text = "Общий запас продукции в наличии.";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(68, 37);
+            this.label11.Location = new System.Drawing.Point(70, 34);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(150, 22);
+            this.label11.Size = new System.Drawing.Size(150, 20);
             this.label11.TabIndex = 1;
-            this.label11.Text = "Stock On Hand";
+            this.label11.Text = "Запасов в наличии";
             // 
             // pictureBox4
             // 
@@ -150,10 +149,11 @@ namespace POSales
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(729, 12);
+            this.panel6.Location = new System.Drawing.Point(711, 12);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(227, 114);
             this.panel6.TabIndex = 2;
+            this.panel6.Visible = false;
             // 
             // lblCriticalItems
             // 
@@ -182,9 +182,10 @@ namespace POSales
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(68, 37);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 22);
+            this.label8.Size = new System.Drawing.Size(103, 20);
             this.label8.TabIndex = 1;
             this.label8.Text = "Critical Items";
+            this.label8.Visible = false;
             // 
             // pictureBox3
             // 
@@ -211,7 +212,7 @@ namespace POSales
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(251, 12);
+            this.panel4.Location = new System.Drawing.Point(245, 12);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(227, 114);
             this.panel4.TabIndex = 1;
@@ -220,7 +221,7 @@ namespace POSales
             // 
             this.lblTotalProduct.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalProduct.ForeColor = System.Drawing.Color.White;
-            this.lblTotalProduct.Location = new System.Drawing.Point(71, 9);
+            this.lblTotalProduct.Location = new System.Drawing.Point(67, 9);
             this.lblTotalProduct.Name = "lblTotalProduct";
             this.lblTotalProduct.Size = new System.Drawing.Size(140, 20);
             this.lblTotalProduct.TabIndex = 2;
@@ -241,11 +242,11 @@ namespace POSales
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(68, 37);
+            this.label5.Location = new System.Drawing.Point(71, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 22);
+            this.label5.Size = new System.Drawing.Size(134, 20);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Total Product";
+            this.label5.Text = "Всего продуктов";
             // 
             // pictureBox2
             // 
@@ -264,64 +265,6 @@ namespace POSales
             this.panel5.Size = new System.Drawing.Size(5, 100);
             this.panel5.TabIndex = 1;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(58, 160);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(842, 401);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(60, 9);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 100);
-            this.panel3.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(5, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(68, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Daily Sales";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(68, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 45);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Total daily sales recorded in the inventory";
-            // 
-            // lblDalySale
-            // 
-            this.lblDalySale.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDalySale.ForeColor = System.Drawing.Color.White;
-            this.lblDalySale.Location = new System.Drawing.Point(71, 9);
-            this.lblDalySale.Name = "lblDalySale";
-            this.lblDalySale.Size = new System.Drawing.Size(140, 20);
-            this.lblDalySale.TabIndex = 2;
-            this.lblDalySale.Text = "0.00";
-            this.lblDalySale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.ForestGreen;
@@ -334,10 +277,69 @@ namespace POSales
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(227, 114);
             this.panel2.TabIndex = 0;
+            this.panel2.Visible = false;
+            // 
+            // lblDalySale
+            // 
+            this.lblDalySale.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDalySale.ForeColor = System.Drawing.Color.White;
+            this.lblDalySale.Location = new System.Drawing.Point(71, 9);
+            this.lblDalySale.Name = "lblDalySale";
+            this.lblDalySale.Size = new System.Drawing.Size(140, 20);
+            this.lblDalySale.TabIndex = 2;
+            this.lblDalySale.Text = "0.00";
+            this.lblDalySale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(68, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 45);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Total daily sales recorded in the inventory";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(68, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Daily Sales";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(5, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(60, 9);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 100);
+            this.panel3.TabIndex = 1;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(34, 148);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(888, 433);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 582);
@@ -348,7 +350,7 @@ namespace POSales
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
-            this.Text = "DASHBOARD";
+            this.Text = "Главная";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -360,10 +362,10 @@ namespace POSales
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,12 +391,12 @@ namespace POSales
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblDalySale;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

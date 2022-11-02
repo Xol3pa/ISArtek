@@ -42,18 +42,18 @@ namespace POSales
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(11, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 21);
+            this.label1.Size = new System.Drawing.Size(129, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "New password:";
+            this.label1.Text = "Новый пароль";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(11, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 21);
+            this.label2.Size = new System.Drawing.Size(116, 21);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Confirm new password:";
+            this.label2.Text = "Подтвердить";
             // 
             // txtResPass
             // 
@@ -95,7 +95,7 @@ namespace POSales
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(89, 30);
             this.btnCancel.TabIndex = 24;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Отмена";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -118,7 +118,7 @@ namespace POSales
             this.MinimizeBox = false;
             this.Name = "ResetPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reset Password";
+            this.Text = "Изменить пароль";
             this.Load += new System.EventHandler(this.ResetPassword_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ResetPassword_KeyDown);
             this.ResumeLayout(false);

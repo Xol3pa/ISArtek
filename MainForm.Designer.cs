@@ -92,6 +92,7 @@ namespace POSales
             // 
             // btnLogout
             // 
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -99,11 +100,11 @@ namespace POSales
             this.btnLogout.Location = new System.Drawing.Point(0, 845);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(179, 45);
+            this.btnLogout.Size = new System.Drawing.Size(183, 45);
             this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "Выйти";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panelSubSetting
@@ -114,7 +115,7 @@ namespace POSales
             this.panelSubSetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubSetting.Location = new System.Drawing.Point(0, 755);
             this.panelSubSetting.Name = "panelSubSetting";
-            this.panelSubSetting.Size = new System.Drawing.Size(179, 90);
+            this.panelSubSetting.Size = new System.Drawing.Size(183, 90);
             this.panelSubSetting.TabIndex = 8;
             // 
             // btnStore
@@ -126,9 +127,9 @@ namespace POSales
             this.btnStore.Location = new System.Drawing.Point(0, 45);
             this.btnStore.Name = "btnStore";
             this.btnStore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnStore.Size = new System.Drawing.Size(179, 45);
+            this.btnStore.Size = new System.Drawing.Size(183, 45);
             this.btnStore.TabIndex = 5;
-            this.btnStore.Text = "Store";
+            this.btnStore.Text = "Склад";
             this.btnStore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStore.UseVisualStyleBackColor = true;
             this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
@@ -142,9 +143,9 @@ namespace POSales
             this.btnUser.Location = new System.Drawing.Point(0, 0);
             this.btnUser.Name = "btnUser";
             this.btnUser.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnUser.Size = new System.Drawing.Size(179, 45);
+            this.btnUser.Size = new System.Drawing.Size(183, 45);
             this.btnUser.TabIndex = 4;
-            this.btnUser.Text = "User";
+            this.btnUser.Text = "Пользователь";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUser.UseVisualStyleBackColor = true;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
@@ -158,9 +159,9 @@ namespace POSales
             this.btnSetting.Location = new System.Drawing.Point(0, 710);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnSetting.Size = new System.Drawing.Size(179, 45);
+            this.btnSetting.Size = new System.Drawing.Size(183, 45);
             this.btnSetting.TabIndex = 7;
-            this.btnSetting.Text = "Setting";
+            this.btnSetting.Text = "Настройки";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.UseVisualStyleBackColor = true;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
@@ -173,7 +174,7 @@ namespace POSales
             this.panelSubRecord.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubRecord.Location = new System.Drawing.Point(0, 620);
             this.panelSubRecord.Name = "panelSubRecord";
-            this.panelSubRecord.Size = new System.Drawing.Size(179, 90);
+            this.panelSubRecord.Size = new System.Drawing.Size(183, 90);
             this.panelSubRecord.TabIndex = 6;
             // 
             // btnPosRecord
@@ -182,14 +183,15 @@ namespace POSales
             this.btnPosRecord.FlatAppearance.BorderSize = 0;
             this.btnPosRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPosRecord.ForeColor = System.Drawing.Color.White;
-            this.btnPosRecord.Location = new System.Drawing.Point(0, 45);
+            this.btnPosRecord.Location = new System.Drawing.Point(0, 55);
             this.btnPosRecord.Name = "btnPosRecord";
             this.btnPosRecord.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnPosRecord.Size = new System.Drawing.Size(179, 45);
+            this.btnPosRecord.Size = new System.Drawing.Size(183, 45);
             this.btnPosRecord.TabIndex = 5;
-            this.btnPosRecord.Text = "POS Record";
+            this.btnPosRecord.Text = "ISArtek";
             this.btnPosRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPosRecord.UseVisualStyleBackColor = true;
+            this.btnPosRecord.Visible = false;
             this.btnPosRecord.Click += new System.EventHandler(this.btnPosRecord_Click);
             // 
             // btnSaleHist
@@ -201,9 +203,9 @@ namespace POSales
             this.btnSaleHist.Location = new System.Drawing.Point(0, 0);
             this.btnSaleHist.Name = "btnSaleHist";
             this.btnSaleHist.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSaleHist.Size = new System.Drawing.Size(179, 45);
+            this.btnSaleHist.Size = new System.Drawing.Size(183, 55);
             this.btnSaleHist.TabIndex = 4;
-            this.btnSaleHist.Text = "Sale History";
+            this.btnSaleHist.Text = "История продаж";
             this.btnSaleHist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSaleHist.UseVisualStyleBackColor = true;
             this.btnSaleHist.Click += new System.EventHandler(this.btnSaleHist_Click);
@@ -217,11 +219,12 @@ namespace POSales
             this.btnRecord.Location = new System.Drawing.Point(0, 575);
             this.btnRecord.Name = "btnRecord";
             this.btnRecord.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnRecord.Size = new System.Drawing.Size(179, 45);
+            this.btnRecord.Size = new System.Drawing.Size(183, 45);
             this.btnRecord.TabIndex = 5;
-            this.btnRecord.Text = "Record";
+            this.btnRecord.Text = "Запрос";
             this.btnRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecord.UseVisualStyleBackColor = true;
+            this.btnRecord.Visible = false;
             this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // btnSupplier
@@ -233,9 +236,9 @@ namespace POSales
             this.btnSupplier.Location = new System.Drawing.Point(0, 530);
             this.btnSupplier.Name = "btnSupplier";
             this.btnSupplier.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnSupplier.Size = new System.Drawing.Size(179, 45);
+            this.btnSupplier.Size = new System.Drawing.Size(183, 45);
             this.btnSupplier.TabIndex = 4;
-            this.btnSupplier.Text = "Supplier";
+            this.btnSupplier.Text = "Поставщик";
             this.btnSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSupplier.UseVisualStyleBackColor = true;
             this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
@@ -248,7 +251,7 @@ namespace POSales
             this.panelSubStock.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubStock.Location = new System.Drawing.Point(0, 440);
             this.panelSubStock.Name = "panelSubStock";
-            this.panelSubStock.Size = new System.Drawing.Size(179, 90);
+            this.panelSubStock.Size = new System.Drawing.Size(183, 90);
             this.panelSubStock.TabIndex = 0;
             // 
             // btnStockAdjustment
@@ -260,9 +263,9 @@ namespace POSales
             this.btnStockAdjustment.Location = new System.Drawing.Point(0, 45);
             this.btnStockAdjustment.Name = "btnStockAdjustment";
             this.btnStockAdjustment.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnStockAdjustment.Size = new System.Drawing.Size(179, 45);
+            this.btnStockAdjustment.Size = new System.Drawing.Size(183, 45);
             this.btnStockAdjustment.TabIndex = 5;
-            this.btnStockAdjustment.Text = "Stock Adjustment";
+            this.btnStockAdjustment.Text = "Запасы";
             this.btnStockAdjustment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStockAdjustment.UseVisualStyleBackColor = true;
             this.btnStockAdjustment.Click += new System.EventHandler(this.btnStockAdjustment_Click);
@@ -276,9 +279,9 @@ namespace POSales
             this.btnStockEntry.Location = new System.Drawing.Point(0, 0);
             this.btnStockEntry.Name = "btnStockEntry";
             this.btnStockEntry.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnStockEntry.Size = new System.Drawing.Size(179, 45);
+            this.btnStockEntry.Size = new System.Drawing.Size(183, 45);
             this.btnStockEntry.TabIndex = 4;
-            this.btnStockEntry.Text = "Stock Entry";
+            this.btnStockEntry.Text = "На складе";
             this.btnStockEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStockEntry.UseVisualStyleBackColor = true;
             this.btnStockEntry.Click += new System.EventHandler(this.btnStockEntry_Click);
@@ -292,9 +295,9 @@ namespace POSales
             this.btnInStock.Location = new System.Drawing.Point(0, 395);
             this.btnInStock.Name = "btnInStock";
             this.btnInStock.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnInStock.Size = new System.Drawing.Size(179, 45);
+            this.btnInStock.Size = new System.Drawing.Size(183, 45);
             this.btnInStock.TabIndex = 3;
-            this.btnInStock.Text = "In Stock";
+            this.btnInStock.Text = "В наличии";
             this.btnInStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInStock.UseVisualStyleBackColor = true;
             this.btnInStock.Click += new System.EventHandler(this.btnInStock_Click);
@@ -308,7 +311,7 @@ namespace POSales
             this.panelSubProduct.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubProduct.Location = new System.Drawing.Point(0, 260);
             this.panelSubProduct.Name = "panelSubProduct";
-            this.panelSubProduct.Size = new System.Drawing.Size(179, 135);
+            this.panelSubProduct.Size = new System.Drawing.Size(183, 135);
             this.panelSubProduct.TabIndex = 0;
             // 
             // btnBrand
@@ -317,12 +320,12 @@ namespace POSales
             this.btnBrand.FlatAppearance.BorderSize = 0;
             this.btnBrand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrand.ForeColor = System.Drawing.Color.White;
-            this.btnBrand.Location = new System.Drawing.Point(0, 90);
+            this.btnBrand.Location = new System.Drawing.Point(0, 102);
             this.btnBrand.Name = "btnBrand";
             this.btnBrand.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnBrand.Size = new System.Drawing.Size(179, 45);
+            this.btnBrand.Size = new System.Drawing.Size(183, 45);
             this.btnBrand.TabIndex = 5;
-            this.btnBrand.Text = "Brand";
+            this.btnBrand.Text = "Бренд";
             this.btnBrand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBrand.UseVisualStyleBackColor = true;
             this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
@@ -333,12 +336,12 @@ namespace POSales
             this.btnCategory.FlatAppearance.BorderSize = 0;
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategory.ForeColor = System.Drawing.Color.White;
-            this.btnCategory.Location = new System.Drawing.Point(0, 45);
+            this.btnCategory.Location = new System.Drawing.Point(0, 57);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnCategory.Size = new System.Drawing.Size(179, 45);
+            this.btnCategory.Size = new System.Drawing.Size(183, 45);
             this.btnCategory.TabIndex = 4;
-            this.btnCategory.Text = "Category";
+            this.btnCategory.Text = "Категория";
             this.btnCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCategory.UseVisualStyleBackColor = true;
             this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
@@ -352,9 +355,9 @@ namespace POSales
             this.btnProductList.Location = new System.Drawing.Point(0, 0);
             this.btnProductList.Name = "btnProductList";
             this.btnProductList.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnProductList.Size = new System.Drawing.Size(179, 45);
+            this.btnProductList.Size = new System.Drawing.Size(183, 57);
             this.btnProductList.TabIndex = 3;
-            this.btnProductList.Text = "Product List";
+            this.btnProductList.Text = "Список продукции";
             this.btnProductList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductList.UseVisualStyleBackColor = true;
             this.btnProductList.Click += new System.EventHandler(this.btnProductList_Click);
@@ -368,15 +371,16 @@ namespace POSales
             this.btnProduct.Location = new System.Drawing.Point(0, 215);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnProduct.Size = new System.Drawing.Size(179, 45);
+            this.btnProduct.Size = new System.Drawing.Size(183, 45);
             this.btnProduct.TabIndex = 2;
-            this.btnProduct.Text = "Product";
+            this.btnProduct.Text = "Продукты";
             this.btnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProduct.UseVisualStyleBackColor = true;
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnDashboard
             // 
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -384,11 +388,11 @@ namespace POSales
             this.btnDashboard.Location = new System.Drawing.Point(0, 170);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(179, 45);
+            this.btnDashboard.Size = new System.Drawing.Size(183, 45);
             this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.Text = "Главная";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // panelLogo
@@ -400,7 +404,7 @@ namespace POSales
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(179, 170);
+            this.panelLogo.Size = new System.Drawing.Size(183, 170);
             this.panelLogo.TabIndex = 1;
             // 
             // lblName
@@ -409,7 +413,7 @@ namespace POSales
             this.lblName.ForeColor = System.Drawing.Color.White;
             this.lblName.Location = new System.Drawing.Point(5, 97);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(31, 22);
+            this.lblName.Size = new System.Drawing.Size(25, 20);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Ln";
             this.lblName.Visible = false;
@@ -420,7 +424,7 @@ namespace POSales
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(52, 115);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(103, 22);
+            this.lblUsername.Size = new System.Drawing.Size(85, 20);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "UserName";
             // 
@@ -430,9 +434,9 @@ namespace POSales
             this.lblRole.ForeColor = System.Drawing.Color.White;
             this.lblRole.Location = new System.Drawing.Point(42, 145);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(131, 22);
+            this.lblRole.Size = new System.Drawing.Size(131, 20);
             this.lblRole.TabIndex = 0;
-            this.lblRole.Text = "Administrator";
+            this.lblRole.Text = "Администратор";
             // 
             // pictureBox1
             // 
@@ -475,7 +479,7 @@ namespace POSales
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(1184, 661);

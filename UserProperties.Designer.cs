@@ -44,27 +44,27 @@ namespace POSales
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(22, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 22);
+            this.label1.Size = new System.Drawing.Size(122, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Full name:";
+            this.label1.Text = "Полное имя";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(22, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 22);
+            this.label2.Size = new System.Drawing.Size(52, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Role:";
+            this.label2.Text = "Роль";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(22, 116);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 22);
+            this.label3.Size = new System.Drawing.Size(108, 22);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Activate:";
+            this.label3.Text = "Активация";
             // 
             // txtName
             // 
@@ -103,9 +103,9 @@ namespace POSales
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(383, 465);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(89, 30);
+            this.btnCancel.Size = new System.Drawing.Size(107, 30);
             this.btnCancel.TabIndex = 26;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Отмена";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -115,11 +115,11 @@ namespace POSales
             this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnApply.FlatAppearance.BorderSize = 0;
             this.btnApply.ForeColor = System.Drawing.Color.Black;
-            this.btnApply.Location = new System.Drawing.Point(283, 465);
+            this.btnApply.Location = new System.Drawing.Point(226, 465);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(89, 30);
+            this.btnApply.Size = new System.Drawing.Size(146, 30);
             this.btnApply.TabIndex = 25;
-            this.btnApply.Text = "Apply";
+            this.btnApply.Text = "Подтвердить";
             this.btnApply.UseVisualStyleBackColor = false;
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
@@ -143,7 +143,7 @@ namespace POSales
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserProperties";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Properties";
+            this.Text = "Характеристики";
             this.Load += new System.EventHandler(this.UserProperties_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserProperties_KeyDown);
             this.ResumeLayout(false);

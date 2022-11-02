@@ -58,30 +58,30 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(7, 4);
+            this.label1.Location = new System.Drawing.Point(12, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 43);
+            this.label1.Size = new System.Drawing.Size(242, 43);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Store Detail";
+            this.label1.Text = "Сведения о складе";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 38);
+            this.label2.Location = new System.Drawing.Point(39, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 22);
+            this.label2.Size = new System.Drawing.Size(106, 22);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Store Name :";
+            this.label2.Text = "Название:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(50, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 22);
+            this.label3.Size = new System.Drawing.Size(79, 22);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Address :";
+            this.label3.Text = "Адрес:";
             // 
             // txtStName
             // 
@@ -104,11 +104,11 @@ namespace POSales
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(437, 116);
+            this.btnSave.Location = new System.Drawing.Point(402, 116);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 35);
+            this.btnSave.Size = new System.Drawing.Size(129, 35);
             this.btnSave.TabIndex = 31;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Сохранить";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -121,9 +121,9 @@ namespace POSales
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(548, 116);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnCancel.Size = new System.Drawing.Size(108, 35);
             this.btnCancel.TabIndex = 32;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Отмена";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -147,7 +147,7 @@ namespace POSales
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Store";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "STORE";
+            this.Text = "АРТЕК СКЛАД";
             this.Load += new System.EventHandler(this.Store_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Store_KeyDown);
             this.panel1.ResumeLayout(false);

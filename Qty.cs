@@ -76,8 +76,8 @@ namespace POSales
                         cm = new SqlCommand("Update tbCart set qty = (qty + " + int.Parse(txtQty.Text) + ")Where id= '" + id + "'", cn);
                         cm.ExecuteReader();
                         cn.Close();
-                        cashier.txtBarcode.Clear();
-                        cashier.txtBarcode.Focus();
+                        //cashier.txtBarcode.Clear();
+                        //cashier.txtBarcode.Focus();
                         cashier.LoadCart();
                         this.Dispose();
                     }
@@ -98,8 +98,8 @@ namespace POSales
                         cm.Parameters.AddWithValue("@cashier", cashier.lblUsername.Text);
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        cashier.txtBarcode.Clear();
-                        cashier.txtBarcode.Focus();
+                        //cashier.txtBarcode.Clear();
+                        //cashier.txtBarcode.Focus();
                         cashier.LoadCart();
                         this.Dispose();
                     }

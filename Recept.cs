@@ -66,8 +66,8 @@ namespace POSales
                 da.Fill(ds.Tables["dtRecept"]);
                 cn.Close();
 
-                ReportParameter pVatable = new ReportParameter("pVatable", cashier.lblVatable.Text);
-                ReportParameter pVat = new ReportParameter("pVat", cashier.lblVat.Text);
+                //ReportParameter pVatable = new ReportParameter("pVatable", cashier.lblVatable.Text);
+                //ReportParameter pVat = new ReportParameter("pVat", cashier.lblVat.Text);
                 ReportParameter pDiscount = new ReportParameter("pDiscount", cashier.lblDiscount.Text);
                 ReportParameter pTotal = new ReportParameter("pTotal", cashier.lblDisplayTotal.Text);
                 ReportParameter pCash = new ReportParameter("pCash", pcash);
@@ -77,8 +77,8 @@ namespace POSales
                 ReportParameter pTransaction = new ReportParameter("pTransaction", "Invoice #: " + cashier.lblTranNo.Text);
                 ReportParameter pCashier = new ReportParameter("pCashier", cashier.lblUsername.Text);
 
-                reportViewer1.LocalReport.SetParameters(pVatable);
-                reportViewer1.LocalReport.SetParameters(pVat);
+                //reportViewer1.LocalReport.SetParameters(pVatable);
+                //reportViewer1.LocalReport.SetParameters(pVat);
                 reportViewer1.LocalReport.SetParameters(pDiscount);
                 reportViewer1.LocalReport.SetParameters(pTotal);
                 reportViewer1.LocalReport.SetParameters(pCash);

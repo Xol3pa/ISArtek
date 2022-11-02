@@ -69,9 +69,9 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 18);
+            this.label1.Size = new System.Drawing.Size(164, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Void Cancel Order";
+            this.label1.Text = "Отменить заказ";
             // 
             // txtUsername
             // 
@@ -95,7 +95,7 @@ namespace POSales
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PromptText = "Username";
+            this.txtUsername.PromptText = "Имя пользователя";
             this.txtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtUsername.SelectedText = "";
             this.txtUsername.SelectionLength = 0;
@@ -104,7 +104,7 @@ namespace POSales
             this.txtUsername.Size = new System.Drawing.Size(268, 31);
             this.txtUsername.TabIndex = 12;
             this.txtUsername.UseSelectable = true;
-            this.txtUsername.WaterMark = "Username";
+            this.txtUsername.WaterMark = "Имя пользователя";
             this.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -129,7 +129,7 @@ namespace POSales
             this.txtPass.MaxLength = 32767;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
-            this.txtPass.PromptText = "Password";
+            this.txtPass.PromptText = "Пароль";
             this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPass.SelectedText = "";
             this.txtPass.SelectionLength = 0;
@@ -139,7 +139,7 @@ namespace POSales
             this.txtPass.TabIndex = 11;
             this.txtPass.UseSelectable = true;
             this.txtPass.UseSystemPasswordChar = true;
-            this.txtPass.WaterMark = "Password";
+            this.txtPass.WaterMark = "Пароль";
             this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -154,13 +154,13 @@ namespace POSales
             this.btnVoid.Name = "btnVoid";
             this.btnVoid.Size = new System.Drawing.Size(268, 31);
             this.btnVoid.TabIndex = 13;
-            this.btnVoid.Text = "Void";
+            this.btnVoid.Text = "Отменить";
             this.btnVoid.UseVisualStyleBackColor = false;
             this.btnVoid.Click += new System.EventHandler(this.btnVoid_Click);
             // 
             // Void
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(410, 243);

@@ -74,9 +74,9 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 23);
+            this.label1.Size = new System.Drawing.Size(175, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Change Your Password";
+            this.label1.Text = "Изменить пароль";
             // 
             // pictureBox1
             // 
@@ -108,7 +108,7 @@ namespace POSales
             this.txtPass.MaxLength = 32767;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
-            this.txtPass.PromptText = "Current Password";
+            this.txtPass.PromptText = "Текущий пароль";
             this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPass.SelectedText = "";
             this.txtPass.SelectionLength = 0;
@@ -118,7 +118,7 @@ namespace POSales
             this.txtPass.TabIndex = 11;
             this.txtPass.UseSelectable = true;
             this.txtPass.UseSystemPasswordChar = true;
-            this.txtPass.WaterMark = "Current Password";
+            this.txtPass.WaterMark = "Текущий пароль";
             this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -128,9 +128,9 @@ namespace POSales
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(100, 96);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(103, 23);
+            this.lblUsername.Size = new System.Drawing.Size(182, 23);
             this.lblUsername.TabIndex = 12;
-            this.lblUsername.Text = "Username";
+            this.lblUsername.Text = "Имя пользователя";
             // 
             // btnSave
             // 
@@ -205,7 +205,7 @@ namespace POSales
             this.txtComPass.MaxLength = 32767;
             this.txtComPass.Name = "txtComPass";
             this.txtComPass.PasswordChar = '●';
-            this.txtComPass.PromptText = "Confirm Password";
+            this.txtComPass.PromptText = "Подтвердите пароль";
             this.txtComPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtComPass.SelectedText = "";
             this.txtComPass.SelectionLength = 0;
@@ -216,7 +216,7 @@ namespace POSales
             this.txtComPass.UseSelectable = true;
             this.txtComPass.UseSystemPasswordChar = true;
             this.txtComPass.Visible = false;
-            this.txtComPass.WaterMark = "Confirm Password";
+            this.txtComPass.WaterMark = "Подтвердите пароль";
             this.txtComPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtComPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -231,7 +231,7 @@ namespace POSales
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(94, 35);
             this.btnNext.TabIndex = 16;
-            this.btnNext.Text = "Next";
+            this.btnNext.Text = "Далее";
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 

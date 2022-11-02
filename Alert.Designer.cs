@@ -74,7 +74,7 @@ namespace POSales
             this.lblMsg.Name = "lblMsg";
             this.lblMsg.Size = new System.Drawing.Size(245, 57);
             this.lblMsg.TabIndex = 6;
-            this.lblMsg.Text = "Message Text";
+            this.lblMsg.Text = "Уведомление";
             this.lblMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblMsg.Click += new System.EventHandler(this.lblMsg_Click);
             // 

@@ -30,8 +30,8 @@ namespace POSales
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockIn));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -111,7 +111,7 @@ namespace POSales
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 43);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Stock In Module";
+            this.label1.Text = "Запас";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // metroTabControl1
@@ -121,7 +121,7 @@ namespace POSales
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(984, 504);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -136,7 +136,7 @@ namespace POSales
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(976, 462);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Stock In";
+            this.tabPage1.Text = "В наличии";
             // 
             // btnEntry
             // 
@@ -149,7 +149,7 @@ namespace POSales
             this.btnEntry.Name = "btnEntry";
             this.btnEntry.Size = new System.Drawing.Size(94, 35);
             this.btnEntry.TabIndex = 12;
-            this.btnEntry.Text = "Entry";
+            this.btnEntry.Text = "Есть";
             this.btnEntry.UseVisualStyleBackColor = false;
             this.btnEntry.Click += new System.EventHandler(this.btnEntry_Click);
             // 
@@ -158,14 +158,14 @@ namespace POSales
             this.dgvStockIn.AllowUserToAddRows = false;
             this.dgvStockIn.BackgroundColor = System.Drawing.Color.White;
             this.dgvStockIn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvStockIn.ColumnHeadersHeight = 30;
             this.dgvStockIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvStockIn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -192,7 +192,7 @@ namespace POSales
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No";
+            this.Column1.HeaderText = "№";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 63;
@@ -207,7 +207,7 @@ namespace POSales
             // 
             // Column10
             // 
-            this.Column10.HeaderText = "Reference#";
+            this.Column10.HeaderText = "Ссылка#";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
             this.Column10.Width = 125;
@@ -215,7 +215,7 @@ namespace POSales
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
+            this.Column2.HeaderText = "Код";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 97;
@@ -223,14 +223,14 @@ namespace POSales
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
+            this.Column4.HeaderText = "Описание";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Qty";
+            this.Column5.HeaderText = "Кол-во";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.Width = 72;
@@ -238,7 +238,7 @@ namespace POSales
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column6.HeaderText = "Stock In Date";
+            this.Column6.HeaderText = "Запас в дате";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.Width = 160;
@@ -246,7 +246,7 @@ namespace POSales
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column7.HeaderText = "Stock In By";
+            this.Column7.HeaderText = "На складе";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.Width = 136;
@@ -254,7 +254,7 @@ namespace POSales
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column8.HeaderText = "Supplier";
+            this.Column8.HeaderText = "Поставщик";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.Width = 108;
@@ -321,10 +321,10 @@ namespace POSales
             this.LinProduct.LinkColor = System.Drawing.Color.DimGray;
             this.LinProduct.Location = new System.Drawing.Point(139, 127);
             this.LinProduct.Name = "LinProduct";
-            this.LinProduct.Size = new System.Drawing.Size(299, 22);
+            this.LinProduct.Size = new System.Drawing.Size(446, 22);
             this.LinProduct.TabIndex = 4;
             this.LinProduct.TabStop = true;
-            this.LinProduct.Text = "[ Click here to browse product ]";
+            this.LinProduct.Text = "[Нажмите здесь, чтобы просмотреть продукт]";
             this.LinProduct.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinProduct_LinkClicked);
             // 
             // LinGenerate
@@ -333,10 +333,10 @@ namespace POSales
             this.LinGenerate.LinkColor = System.Drawing.Color.DimGray;
             this.LinGenerate.Location = new System.Drawing.Point(322, 15);
             this.LinGenerate.Name = "LinGenerate";
-            this.LinGenerate.Size = new System.Drawing.Size(125, 22);
+            this.LinGenerate.Size = new System.Drawing.Size(100, 22);
             this.LinGenerate.TabIndex = 4;
             this.LinGenerate.TabStop = true;
-            this.LinGenerate.Text = "[ Generate ]";
+            this.LinGenerate.Text = "[Создать]";
             this.LinGenerate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinGenerate_LinkClicked);
             // 
             // dtStockIn
@@ -365,18 +365,18 @@ namespace POSales
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(8, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 22);
+            this.label4.Size = new System.Drawing.Size(62, 22);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Stock In Date :";
+            this.label4.Text = "Дата:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(8, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 22);
+            this.label3.Size = new System.Drawing.Size(115, 22);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Stock In By :";
+            this.label3.Text = "На складе:";
             // 
             // lblId
             // 
@@ -393,9 +393,9 @@ namespace POSales
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(463, 90);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 22);
+            this.label7.Size = new System.Drawing.Size(79, 22);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Address :";
+            this.label7.Text = "Адрес:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
@@ -403,27 +403,27 @@ namespace POSales
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(463, 52);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 22);
+            this.label6.Size = new System.Drawing.Size(177, 22);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Contack Person :";
+            this.label6.Text = "Контактное лицо :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(463, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 22);
+            this.label5.Size = new System.Drawing.Size(122, 22);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Supplier :";
+            this.label5.Text = "Поставщик:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 22);
+            this.label2.Size = new System.Drawing.Size(156, 22);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Reference No :";
+            this.label2.Text = "Номер ссылки:";
             // 
             // tabPage2
             // 
@@ -434,21 +434,21 @@ namespace POSales
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(976, 462);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Stock In Record";
+            this.tabPage2.Text = "Запас в записи";
             // 
             // dgvInStockHistory
             // 
             this.dgvInStockHistory.AllowUserToAddRows = false;
             this.dgvInStockHistory.BackgroundColor = System.Drawing.Color.White;
             this.dgvInStockHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvInStockHistory.ColumnHeadersHeight = 30;
             this.dgvInStockHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInStockHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -488,7 +488,7 @@ namespace POSales
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Reference#";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Ссылка#";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 125;
@@ -496,7 +496,7 @@ namespace POSales
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Pcode";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Код";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 97;
@@ -504,14 +504,14 @@ namespace POSales
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Описание";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Qty";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Кол-во";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 72;
@@ -519,7 +519,7 @@ namespace POSales
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Stock In Date";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Запас в дате";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 160;
@@ -527,7 +527,7 @@ namespace POSales
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn8.HeaderText = "Stock In By";
+            this.dataGridViewTextBoxColumn8.HeaderText = "На складе";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 136;
@@ -535,7 +535,7 @@ namespace POSales
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn9.HeaderText = "Supplier";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Поставщик";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 108;
@@ -564,7 +564,7 @@ namespace POSales
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(115, 29);
             this.btnLoad.TabIndex = 13;
-            this.btnLoad.Text = "Load Record";
+            this.btnLoad.Text = "Загрузить";
             this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
@@ -575,7 +575,7 @@ namespace POSales
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(30, 22);
             this.label9.TabIndex = 2;
-            this.label9.Text = "To";
+            this.label9.Text = "До";
             // 
             // dtTo
             // 
@@ -600,9 +600,9 @@ namespace POSales
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(8, 25);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 22);
+            this.label8.Size = new System.Drawing.Size(161, 22);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Filter By Date : From";
+            this.label8.Text = "Фильтровать по:";
             // 
             // StockIn
             // 
@@ -617,7 +617,7 @@ namespace POSales
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "StockIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "STOCK ENTRY";
+            this.Text = "ЗАПИСЬ НА АКЦИИ";
             this.panel1.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
